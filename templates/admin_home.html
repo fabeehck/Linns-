@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+    <script src="
+https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
+" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <title>admin_home</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body action="/admin">
+    <!--Navbar start-->
+
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid" id="navbar2">
+            <a class="navbar-brand" href="#"><img src="../static/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="grid-column-gap: 23px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/admin">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/hyy">DEPARTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/course">COURSE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/batch">BATCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/sem">SEMESTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/sub">SUBJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/teach">TEACHER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/exam">EXAM</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/add">STUDENT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Navbar end-->
+
+
+
+    <!--carosel start-->
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-aos="slide-right"
+        data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/images/slider-bg.jpg" class="d-block w-100 carousel-img-size" alt="..."
+                    style="object-fit: none;">
+                <div class="carousel0">
+                    <div class="carousel-caption d-none d-md-block" style="text-align: inherit;">
+                        <div class="carousel1" data-aos="flip-down" data-aos-offset="200" data-aos-delay="50"
+                            data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                            <script>
+                                AOS.init();
+                            </script>
+                            <p>WITH SENSEI PLUGIN MAKE YOUR LMS
+                                THEME EVEN MORE POWERFUL</p>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="items1">
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="100"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+
+                                <p><i class="fa-solid fa-clapperboard"></i>&nbsp;&nbsp;WooCommerce Plugin Support</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="10" data-aos-delay="150"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Fully Customize Course</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="200"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Course With Modules</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="250"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-solid fa-glasses"></i>&nbsp;&nbsp;Quize -Auto & Manual Evaluation</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="300"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-solid fa-puzzle-piece"></i>&nbsp;Sensei Addons Support</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="350"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-solid fa-chart-line"></i>&nbsp;&nbsp;Course Analystics</p>
+                            </div>
+                            <div data-aos="slide-right" data-aos-offset="50" data-aos-delay="400"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <p><i class="fa-solid fa-user-large"></i>&nbsp;&nbsp;Learner Management</p>
+                            </div>
+                            <div>
+                                <p data-aos="slide-right" data-aos-offset="50" data-aos-delay="450"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                    <script>
+                                        AOS.init();
+                                    </script><i class="fa-regular fa-comments">
+                                    </i>&nbsp;&nbsp;Student & Staff Communication
+                                </p>
+                            </div>
+                            <div>
+                                <p data-aos="slide-right" data-aos-offset="50" data-aos-delay="500"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                                    <script>
+                                        AOS.init();
+                                    </script><i class="fa-regular fa-envelope"></i>
+                                    &nbsp;&nbsp;Email Notification
+                                </p>
+                            </div>
+                        </div>
+                        <div data-aos="flip-down" data-aos-offset="50" data-aos-delay="50" data-aos-duration="2000"
+                            data-aos-easing="ease-in-out">
+                            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                            <script>
+                                AOS.init();
+                            </script>
+                            <img src="../static/images/sensei-logo.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="carousel-item">
+                <img src="../static/images/bg2.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel2">
+                    <div class="carousel-caption d-none d-md-block items2" style="color: black;">
+                        <div class="lms">
+                            <p class="lms1">LMS WILL BE THE BEST TEACHER </p>
+                            <p class="lms2">YOU'VE EVER SEEN</p>
+                        </div>
+                        <div class="get">
+                            <p>Get certified courses & badges on-line</p>
+                        </div>
+                        <div class="plugin">
+                            <p>LMS now has the option to provide online badges and certificates as per grades and marks
+                                achieved. Quiz with manual and auto grading makes LMS more powerful with Sense Plugin.
+                            </p>
+                        </div>
+                        <br>
+                        <div>
+
+                            <button type="button" class="btn btn-outline-secondary" id="button">PURCHASE THEME</button>
+                            <button type="button" class="btn btn-outline-secondary" id="button">TRY THE LIVE
+                                DEMO</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/bg3.jpg" class="d-block w-100 carousel-img-size" alt="...">
+
+                <div class="carousel3">
+                    <div class="carousel-caption d-none d-md-block items2" style="color: black;">
+                        <div class="lmss">
+                            <p class="lms2">WELCOME TO THE MOST 'ELEGANT'</p>
+                            <p class="lms3">ONLINE COURSE THEME</p>
+                        </div>
+                        <div class="get2">
+                            <p>Learn any course of your choice on-line</p>
+                        </div>
+                        <div class="plugin3">
+                            <div class="icons1">
+                                <i class="fa-brands fa-html5" class="html1"></i>
+                            </div>
+
+                            <div class="icons2">
+                                <i class="fa-brands fa-css3-alt" class="css1"></i>
+                            </div>
+
+                            <div class="icons3">
+                                <i class="fa-brands fa-android" class="android1"></i>
+                            </div>
+
+                            <div class="icons4">
+                                <i class="fa-brands fa-js" class="js1"></i>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+
+                            <button type="button" class="btn btn-outline-secondary" id="button1">PURCHASE THEME</button>
+                            <button type="button" class="btn btn-outline-secondary" id="button1">TRY THE LIVE
+                                DEMO</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button> -->
+        <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+    <!--carosel end-->
+
+    <!-- second-page start -->
+
+
+    <section class="section1">
+
+        <div class="container">
+            <div class="row" id="roww">
+
+                <div class="col-3" id="tt">
+                    <img src="../static/images/custom-icon1.png" alt="" class="brain">
+
+                </div>
+
+                <div class="col-3" id="tt">
+                    <img src="../static/images/custom-icon2.png" alt="" class="brain">
+                    <!-- <a href="#">Group Seminar</a> -->
+
+                </div>
+
+
+                <div class="col-3" id="tt">
+                    <img src="../static/images/custom-icon3.png" alt="" class="brain">
+                    <!-- <a href="#">Analysed Syllabus</a> -->
+
+                </div>
+
+
+                <div class="col-3" id="tt">
+                    <img src="../static/images/custom-icon4.png" alt="" class="brain">
+                    <!-- <a href="#">Group Seminar</a> -->
+
+                </div>
+            </div>
+
+            <div class="row" id="roww">
+
+                <div class="col-3" id="t">
+
+                    <div> Best Stimulation</div>
+                </div>
+
+                <div class="col-3" id="t">
+
+                    <div>Group Seminar</div>
+
+                </div>
+
+
+                <div class="col-3" id="t">
+
+                    <div>Analysed Syllabus</div>
+
+                </div>
+
+
+                <div class="col-3" id="t">
+
+                    <div>Group Seminar</div>
+
+                </div>
+            </div>
+
+            <div class="fav">
+                <h2 class="cou">COURSES
+                    <hr class="spann">
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="about">About Courses</h2>
+                    <p class="best">
+
+                        Student Registration and Administration Nemo enim ipsam voluptatem quia voluptas sit atur aut
+                        odit
+                        aut fugit, sed quia consequuntur magni res eos qui ratione voluptatem sequi nesciunt.</p>
+                    <div class="many"></div>
+                    <p class="there"> There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered
+                        alteration in some form, by injected humour, or randomised believable.</p>
+                    <div>
+
+                        <button type="button" class="btn btn-outline-secondary" id="button">
+                            <h5>VIEW ALL COURSES</h5>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-8">
+
+
+                    <section class="pt-5 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="mb-3"></h3>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
+                                        role="button" data-slide="prev">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                                        data-slide="next">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row">
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course2 (1).jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course3-1 (1).jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course6-1.jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course3-1 (1).jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course3-1 (1).jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="../static/images/course3-1 (1).jpg">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card">
+                                                            <img class="img-fluid" alt="100%x280"
+                                                                src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">Special title treatment</h4>
+                                                                <p class="card-text">With supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <script>
+
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items: 4,
+                    // items change number for slider display on desktop
+
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 30000,
+                    autoplayHoverPause: true
+                });
+
+
+
+            </script>
+
+            <section class="section2">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="../static/images/lms-banner1.jpg" alt="">
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="../static/images/lms-banner2.jpg" alt="">
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="../static/images/lms-banner3.jpg" alt="">
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section3">
+
+
+                <div class="blog">
+                    <p>BLOG
+                        <hr class="spann2">
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="section3">
+
+                <div class="row">
+                    <div class="col-lg-4" id="ttt">
+
+
+
+                        <img src="../static/images/blog15-1-573x403.jpg" alt="" class="blog15">
+
+
+
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+
+
+                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../static/images/blog14.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../static/images/blog16.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../static/images/blog4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../static/images/blog6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-lg-4" id="ttt">
+
+
+
+                        <img src="../static/images/blog17-573x403.jpg" alt="" class="blog15">
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="row" id="entry-detail">
+                            <div class="col-lg-3" id="entry-meta">
+                                <div class="date">
+
+                                    28 jan
+
+                                </div>
+                                <div class="date1">
+
+                                    <a href="../templates/home.html"><i class="fa-thin fa-image"></i></a>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="col-lg-9">
+
+                                <div class="Minus">
+                                    <p>Image - Minus id quod</p>
+                                </div>
+
+                                <div class="ram">
+                                    <p><i class="fa-solid fa-user"></i> &nbsp;ram &nbsp;|&nbsp;<i
+                                            class="fa-solid fa-pen-nib"></i>&nbsp;creative, design, news&nbsp;<i
+                                            class="fa-solid fa-comments"></i>0</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-4">
+                        <div class="row" id="entry-detail">
+                            <div class="col-lg-3" id="entry-meta">
+                                <div class="date">
+
+                                    28 jan
+
+                                </div>
+                                <div class="date1">
+
+                                    <a href="../templates/home.html"><i class="fa-thin fa-image"></i></a>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="col-lg-9">
+
+                                <div class="Minus">
+                                    <p>Gallery - Cumque nihil imopedit</p>
+                                </div>
+
+                                <div class="ram">
+                                    <p><i class="fa-solid fa-user"></i> &nbsp;ram &nbsp;|&nbsp;<i
+                                            class="fa-solid fa-pen-nib"></i>&nbsp;blog, chat,&nbsp;|&nbsp;<i
+                                            class="fa-solid fa-comments"></i>0</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4">
+                        <div class="row" id="entry-detail">
+                            <div class="col-lg-3" id="entry-meta">
+                                <div class="date">
+
+                                    28 jan
+
+                                </div>
+                                <div class="date1">
+
+                                    <a href="../templates/home.html"><i class="fa-thin fa-image"></i></a>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="col-lg-9">
+
+                                <div class="Minus">
+                                    <p>Latin Word Ipsum</p>
+                                </div>
+
+                                <div class="ram">
+                                    <p><i class="fa-solid fa-user"></i> &nbsp;ram &nbsp;|&nbsp;<i
+                                            class="fa-solid fa-pen-nib"></i>&nbsp;blog, chat, &nbsp;<i
+                                            class="fa-solid fa-comments"></i>2</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- second-page end -->
+
+        </div>
+    </section>
+
+
+
+    <!-- third images -->
+
+    <section class="section4">
+
+        <div class="container">
+
+            <div class="parallax">
+
+
+                <div class="icons1">
+                    <i class="fa-brands fa-html5" class="html"></i>
+                </div>
+
+                <div class="icons2">
+                    <i class="fa-brands fa-css3-alt" class="css"></i>
+                </div>
+
+                <div class="icons3">
+                    <i class="fa-brands fa-android" class="android"></i>
+                </div>
+
+                <div class="icons4">
+                    <i class="fa-brands fa-js" class="js"></i>
+                </div>
+
+                <div class="icons5">
+                    <i class="fa-solid fa-gem"></i>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="parallax1">
+
+                <div>
+                    HTML
+                </div>
+
+                <div class="css1">
+                    CSS
+                </div>
+
+                <div class="android1">
+                    Android
+                </div>
+
+                <div>
+                    jQuery
+                </div>
+
+                <div>
+                    Ruby
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <section class="section5">
+
+        <div class="container">
+
+            <div class="fav1">
+                <h2 class="cou1">UPCOMING EVENTS
+                    <hr class="spann1">
+                </h2>
+            </div>
+            <div class="upcoming">
+
+                <div class="row">
+                    <div class="col-lg-6" style="display: flex;">
+
+                        <div class="ccc">
+                            <img src="../static/images/ccc.jpg" alt="" height="100px">
+                        </div>
+
+                        <div class="event-content">
+                            <h4>
+                                Welcoming 25th Batch
+                            </h4>
+                            <div class="event-met">
+                                <p><i class="fa-regular fa-calendar"></i> &nbsp;july 2015 @ 08:00 am - 2024 march @
+                                    10:00pm
+                                </p>
+                                <p><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="../templates/home.html"
+                                        style="color: #da853d;">Peppard Hill</a>, United <a
+                                        href="../templates/home.html" style="color: #da853d;">+ Google Map</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" style="display: flex;">
+                        <div class="cc2">
+                            <img src="../static/images/cc2.jpg" alt="" height="100px">
+                        </div>
+                        <div class="event-content">
+                            <h4>
+                                Fast Track Course Opening
+                            </h4>
+                            <div class="event-met">
+                                <p><i class="fa-regular fa-calendar"></i> &nbsp;Aug 2015 @ 09:00 am - 2024 march @
+                                    10:00pm
+                                </p>
+                                <p><i class="fa-solid fa-location-dot"></i>&nbsp;<a href="../templates/home.html"
+                                        style="color: #da853d;">Rippon Building</a>, United <a
+                                        href="../templates/home.html" style="color: #da853d;">+ Google Map</a></p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <section class="section6">
+
+        <div class="container">
+
+
+            <div class="touch">
+                <h2 class="touch1">
+                    GET IN TOUCH WITH US
+                </h2>
+
+                <p class="passages1"> There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered
+                    alteration in some form, by injected humour, or randomised words which Ipsum slightly believable
+                </p>
+                <input type="email" name="emailid" id="emailid" placeholder="Your Email Address">
+                <input type="submit" name="submit" value="SUBCRIBE" id="submit">
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <!-- third image end -->
+</body>
+
+</html>
